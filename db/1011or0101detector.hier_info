@@ -1,0 +1,23 @@
+|detector
+reset => reg_fstate.B.OUTPUTSELECT
+reset => reg_fstate.C.OUTPUTSELECT
+reset => reg_fstate.D.OUTPUTSELECT
+reset => reg_fstate.E.OUTPUTSELECT
+reset => reg_fstate.F.OUTPUTSELECT
+reset => reg_fstate.G.OUTPUTSELECT
+reset => reg_R.OUTPUTSELECT
+reset => R.OUTPUTSELECT
+reset => fstate.A.DATAIN
+clock => fstate~1.DATAIN
+x => Selector3.IN1
+x => reg_R.DATAB
+x => Selector4.IN2
+x => Selector4.IN3
+x => Selector1.IN1
+x => Selector2.IN1
+x => Selector0.IN1
+x => Selector5.IN2
+x => Selector5.IN3
+R << R.DB_MAX_OUTPUT_PORT_TYPE
+
+
